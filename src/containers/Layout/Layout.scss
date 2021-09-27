@@ -1,0 +1,11 @@
+@import "../../assets/scss/";
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+  padding: 0 40px;
+  background-color: $grey-light;
+  @include respond("mobile") {
+    padding: 0 20px;
+  }
+}

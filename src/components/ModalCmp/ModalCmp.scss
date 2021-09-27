@@ -1,0 +1,37 @@
+@import "../../assets/scss/";
+
+.ReactModal__Content {
+  margin: auto;
+  max-width: 300px;
+  height: 100px;
+  @include flex(
+    $justify: space-between,
+    $align: flex-start,
+    $direction: column
+  );
+  .custom-modal {
+    &-text {
+      @include font-style(
+        "RobotoRegular",
+        $fw-400,
+        $fs-16,
+        $fs-14,
+        $primary-light
+      );
+    }
+
+    &-button {
+      .secondary {
+        cursor: pointer;
+        border: none;
+        @include border-radius(3px);
+        background-color: $grey-dark;
+        color: $white;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: $fs-16;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../assets/scss/";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $white;
+  @include flex($justify: flex-end, $align: center, $direction: row);
+  @include border(1px, solid, $grey-medium);
+  @include respond("tablet") {
+    @include flex($justify: center, $align: center, $direction: row);
+  }
+
+  &-link {
+    cursor: pointer;
+    @include font-style(
+      "RobotoSlabRegular",
+      $fw-400,
+      $fs-16,
+      $fs-14,
+      $primary-light
+    );
+    @include flex($justify: center, $align: center, $direction: row);
+    width: 120px;
+    padding: 20px 0;
+    position: relative;
+    &.active {
+      color: $primary-dark;
+      &::after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        border-bottom: 2px solid $primary-dark;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}

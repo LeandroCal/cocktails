@@ -1,0 +1,8 @@
+@import "../../../assets/scss/";
+
+.cocktails {
+  background-color: $white;
+  padding: 0 20px;
+  margin-top: 20px;
+  @include border(1px, solid, $grey-medium);
+}

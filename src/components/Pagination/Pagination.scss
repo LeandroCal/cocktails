@@ -1,0 +1,24 @@
+@import "../../assets/scss/";
+
+.pagination {
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0;
+  background-color: $white;
+  @include border(1px, solid, $grey-medium);
+  @include flex(center, center);
+  @include font-style(
+    "RobotoSlabBold",
+    $fw-700,
+    $fs-24,
+    $fs-38,
+    $primary-light
+  );
+  &-page {
+    cursor: pointer;
+    margin: 0 20px;
+    &.selected {
+      color: $primary-dark;
+    }
+  }
+}

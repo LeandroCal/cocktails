@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: local("Roboto-Regular"),
+    url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: local("Roboto-Bold"),
+    url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RobotoSlabRegular";
+  src: local("RobotoSlab-Regular"),
+    url("../fonts/RobotoSlab/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoSlabBold";
+  src: local("RobotoSlab-Bold"),
+    url("../fonts/RobotoSlab/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@mixin font-style(
+  $family: "RobotoRegular",
+  $weight: normal,
+  $size: 16px,
+  $height: normal,
+  $color: $text-main
+) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}

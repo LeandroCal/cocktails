@@ -1,0 +1,33 @@
+@import "../../../assets/scss/";
+
+.headerTab1 {
+  &-title {
+    @include flex(center, flex-end);
+    @include respond("tablet") {
+      @include flex(flex-start, flex-end);
+    }
+    &__text {
+      @include font-style(
+        "RobotoSlabRegular",
+        $fw-400,
+        $fs-24,
+        $fs-30,
+        $primary-dark
+      );
+      span {
+        font-weight: $fw-700;
+      }
+    }
+    &__icon {
+      margin-left: 20px;
+      svg {
+        margin-right: 5px;
+      }
+      @include respond("tablet") {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+}

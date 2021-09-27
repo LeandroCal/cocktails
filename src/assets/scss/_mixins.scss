@@ -1,0 +1,108 @@
+@import "node_modules/flexbox-grid-mixins/sass/flexbox-grid-mixins";
+
+$default-grid-columns: 12;
+$default-grid-gutter: 0%;
+
+.grid {
+  @include grid($gutter: $default-grid-gutter);
+
+  @for $i from 1 through $default-grid-columns {
+    > .grid__col-#{$i} {
+      @include grid-col(
+        $col: $i,
+        $grid-columns: $default-grid-columns,
+        $gutter: $default-grid-gutter
+      );
+    }
+  }
+}
+
+@mixin flex(
+  $justify: flex-start,
+  $align: center,
+  $direction: row,
+  $wrap: wrap
+) {
+  @include display-flex();
+  @include flex-direction($direction);
+  @include justify-content($justify);
+  @include align-items($align);
+  @include flex-wrap($wrap);
+}
+
+@mixin display-flex() {
+  display: -webkit-flex;
+  display: -webkit-flexbox;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  align-items: $align;
+}
+
+@mixin border($px: 1px, $style: solid, $color: #000, $pxRadius: 0) {
+  border: $px $style $color;
+  @if $pxRadius {
+    @include border-radius($pxRadius);
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box; // stops bg color from leaking outside the border:
+}
+
+$max: 50;
+$offset: 5;
+$unit: "px";
+@mixin spacing($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+// Margins
+@include spacing(".mt-", "margin-top");
+@include spacing(".mr-", "margin-right");
+@include spacing(".mb-", "margin-bottom");
+@include spacing(".ml-", "margin-left");
+@include spacing(".m-", "margin");
+// Paddings
+@include spacing(".pt-", "padding-top");
+@include spacing(".pr-", "padding-right");
+@include spacing(".pb-", "padding-bottom");
+@include spacing(".pl-", "padding-left");
+@include spacing(".p-", "padding");

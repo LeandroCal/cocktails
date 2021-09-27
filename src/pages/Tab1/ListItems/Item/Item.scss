@@ -1,0 +1,84 @@
+@import "../../../../assets/scss/";
+
+.item {
+  cursor: pointer;
+  position: relative;
+  background-color: $white;
+  flex: 1 0 20%;
+  max-width: calc(20% - 32px);
+  @include border(1px, solid, $new-blue-2);
+  margin: 5px;
+  @include respond("tablet") {
+    flex: 1 0 50%;
+    max-width: calc(50% - 32px);
+  }
+  @include respond("mobile") {
+    flex: 1 0 100%;
+    max-width: calc(100% - 32px);
+  }
+
+  &.selected {
+    @include border(1px, solid, $new-blue-3);
+  }
+
+  &-title {
+    @include flex(center, center);
+    @include font-style("RobotoBold", $fw-700, $fs-16, $fs-16, $new-blue);
+    padding: 20px 0;
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      border-bottom: 1px solid $new-blue-2;
+      width: 72px;
+      display: block;
+    }
+  }
+
+  &-options {
+    ul {
+      padding-left: 25px;
+      li {
+        @include font-style(
+          "RobotoRegular",
+          $fw-400,
+          $fs-15,
+          $fs-25,
+          $new-blue-4
+        );
+        &::marker {
+          color: $grey-dark;
+        }
+      }
+    }
+  }
+
+  &-radio {
+    @include font-style("RobotoRegular", $fw-400, $fs-16, $fs-16, $grey-text);
+    @include flex(space-between, center);
+    @include border(1px, solid, rgba(222, 225, 232, 0.376245));
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 42px);
+    background: rgba(222, 225, 232, 0.376245);
+    &.selected {
+      background: $grey-light-2;
+      @include font-style(
+        "RobotoRegular",
+        $fw-400,
+        $fs-16,
+        $fs-16,
+        $new-blue-3
+      );
+      @include border(1px, solid, $new-blue-3);
+    }
+    input {
+      cursor: pointer;
+      margin: 0;
+    }
+    span {
+      width: 70%;
+    }
+  }
+}

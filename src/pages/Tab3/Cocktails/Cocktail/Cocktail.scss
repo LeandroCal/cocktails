@@ -1,0 +1,90 @@
+@import "../../../../assets/scss/";
+
+.cocktail {
+  position: relative;
+  @include flex(space-between, flex-start, row, nowrap);
+  @include border(1px, solid, $grey-medium);
+  margin-bottom: 20px;
+  padding: 30px 0;
+  @include respond("tablet") {
+    @include flex(flex-start, center, column, nowrap);
+  }
+
+  &-img {
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    @include flex(center, center);
+    img {
+      max-width: 100%;
+      max-height: 300px;
+    }
+  }
+
+  &-info {
+    @include flex(space-between, flex-start, column);
+    width: calc(100% - 380px);
+    min-height: 300px;
+
+    @include respond("tablet") {
+      min-height: auto;
+      width: calc(100% - 40px);
+    }
+
+    &__name {
+      margin-bottom: 20px;
+      @include font-style(
+        "RobotoSlabBold",
+        $fw-700,
+        $fs-18,
+        $fs-24,
+        $primary-dark
+      );
+      @include respond("tablet") {
+        margin-top: 20px;
+      }
+    }
+    &__description {
+      @include font-style("RobotoRegular", $fw-400, $fs-14, $fs-20, $text-main);
+      @include respond("tablet") {
+        margin-bottom: 20px;
+      }
+    }
+    &__pairing {
+      @include font-style(
+        "RobotoSlabBold",
+        $fw-700,
+        $fs-14,
+        $fs-18,
+        $primary-light
+      );
+    }
+  }
+
+  &-abv {
+    margin-left: 30px;
+    width: 82px;
+    @include respond("tablet") {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &-state {
+      @include font-style("RobotoSlabBold", $fw-700, $fs-18, $fs-24, $black);
+      padding: 10px;
+      background-color: $grey-medium;
+
+      &__chill {
+        background-color: $yellow;
+      }
+      &__careful {
+        background-color: $orange;
+      }
+      &__hospital {
+        background-color: $red;
+        color: $white;
+      }
+    }
+  }
+}

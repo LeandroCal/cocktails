@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cocktail/static/css/main.a133aee5.chunk.css",
+    "main.js": "/cocktail/static/js/main.73a856c8.chunk.js",
+    "main.js.map": "/cocktail/static/js/main.73a856c8.chunk.js.map",
+    "runtime-main.js": "/cocktail/static/js/runtime-main.315690f0.js",
+    "runtime-main.js.map": "/cocktail/static/js/runtime-main.315690f0.js.map",
+    "static/js/2.7400d744.chunk.js": "/cocktail/static/js/2.7400d744.chunk.js",
+    "static/js/2.7400d744.chunk.js.map": "/cocktail/static/js/2.7400d744.chunk.js.map",
+    "static/js/3.f8a712b2.chunk.js": "/cocktail/static/js/3.f8a712b2.chunk.js",
+    "static/js/3.f8a712b2.chunk.js.map": "/cocktail/static/js/3.f8a712b2.chunk.js.map",
+    "index.html": "/cocktail/index.html",
+    "service-worker.js": "/cocktail/service-worker.js",
+    "service-worker.js.map": "/cocktail/service-worker.js.map",
+    "static/css/main.a133aee5.chunk.css.map": "/cocktail/static/css/main.a133aee5.chunk.css.map",
+    "static/js/2.7400d744.chunk.js.LICENSE.txt": "/cocktail/static/js/2.7400d744.chunk.js.LICENSE.txt",
+    "static/media/Layout.scss": "/cocktail/static/media/RobotoSlab-Regular.a36eb364.ttf",
+    "static/media/star.f2536aab.svg": "/cocktail/static/media/star.f2536aab.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.315690f0.js",
+    "static/js/2.7400d744.chunk.js",
+    "static/css/main.a133aee5.chunk.css",
+    "static/js/main.73a856c8.chunk.js"
+  ]
+}

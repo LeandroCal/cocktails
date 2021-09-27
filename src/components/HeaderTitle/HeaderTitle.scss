@@ -1,0 +1,13 @@
+@import "../../assets/scss/";
+
+.headerTitle {
+  @include flex(flex-start, flex-end);
+  @include font-style(
+    "RobotoSlabBold",
+    $fw-700,
+    $fs-24,
+    $fs-38,
+    $primary-light
+  );
+  padding: 20px 0;
+}

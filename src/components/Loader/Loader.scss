@@ -1,0 +1,22 @@
+@import "../../assets/scss/";
+
+.full-screen {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .loader {
+    position: relative;
+    top: 40%;
+    margin: auto;
+    border: 16px solid $white;
+    border-radius: 50%;
+    border-top: 16px solid $primary-light;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+}
