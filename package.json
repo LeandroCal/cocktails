@@ -1,7 +1,7 @@
 {
   "name": "cocktail",
   "version": "0.1.0",
-  "homepage": "/cocktail",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.15.5",

@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/cocktail/static/css/main.a133aee5.chunk.css",
-    "main.js": "/cocktail/static/js/main.6571a45f.chunk.js",
-    "main.js.map": "/cocktail/static/js/main.6571a45f.chunk.js.map",
-    "runtime-main.js": "/cocktail/static/js/runtime-main.315690f0.js",
-    "runtime-main.js.map": "/cocktail/static/js/runtime-main.315690f0.js.map",
-    "static/js/2.7400d744.chunk.js": "/cocktail/static/js/2.7400d744.chunk.js",
-    "static/js/2.7400d744.chunk.js.map": "/cocktail/static/js/2.7400d744.chunk.js.map",
-    "static/js/3.f8a712b2.chunk.js": "/cocktail/static/js/3.f8a712b2.chunk.js",
-    "static/js/3.f8a712b2.chunk.js.map": "/cocktail/static/js/3.f8a712b2.chunk.js.map",
-    "index.html": "/cocktail/index.html",
-    "service-worker.js": "/cocktail/service-worker.js",
-    "service-worker.js.map": "/cocktail/service-worker.js.map",
-    "static/css/main.a133aee5.chunk.css.map": "/cocktail/static/css/main.a133aee5.chunk.css.map",
-    "static/js/2.7400d744.chunk.js.LICENSE.txt": "/cocktail/static/js/2.7400d744.chunk.js.LICENSE.txt",
-    "static/media/Layout.scss": "/cocktail/static/media/RobotoSlab-Regular.a36eb364.ttf",
-    "static/media/star.f2536aab.svg": "/cocktail/static/media/star.f2536aab.svg"
+    "main.css": "/static/css/main.ed67a6eb.chunk.css",
+    "main.js": "/static/js/main.56aa88e0.chunk.js",
+    "main.js.map": "/static/js/main.56aa88e0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.05f9e48e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.05f9e48e.js.map",
+    "static/js/2.7400d744.chunk.js": "/static/js/2.7400d744.chunk.js",
+    "static/js/2.7400d744.chunk.js.map": "/static/js/2.7400d744.chunk.js.map",
+    "static/js/3.f8a712b2.chunk.js": "/static/js/3.f8a712b2.chunk.js",
+    "static/js/3.f8a712b2.chunk.js.map": "/static/js/3.f8a712b2.chunk.js.map",
+    "index.html": "/index.html",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.map": "/service-worker.js.map",
+    "static/css/main.ed67a6eb.chunk.css.map": "/static/css/main.ed67a6eb.chunk.css.map",
+    "static/js/2.7400d744.chunk.js.LICENSE.txt": "/static/js/2.7400d744.chunk.js.LICENSE.txt",
+    "static/media/Layout.scss": "/static/media/RobotoSlab-Regular.a36eb364.ttf",
+    "static/media/star.f2536aab.svg": "/static/media/star.f2536aab.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.315690f0.js",
+    "static/js/runtime-main.05f9e48e.js",
     "static/js/2.7400d744.chunk.js",
-    "static/css/main.a133aee5.chunk.css",
-    "static/js/main.6571a45f.chunk.js"
+    "static/css/main.ed67a6eb.chunk.css",
+    "static/js/main.56aa88e0.chunk.js"
   ]
 }
