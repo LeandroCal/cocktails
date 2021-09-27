@@ -1,7 +1,8 @@
-# cocktails
+# Cocktails
 
-# npm i
-# npm start
+# Run
+npm i
+npm start
 
-Test
-# yarn cypress open-ct
+# Test
+yarn cypress open-ct
